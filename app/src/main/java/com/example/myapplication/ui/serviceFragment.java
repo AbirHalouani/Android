@@ -13,6 +13,7 @@ import android.widget.SearchView;
 import com.example.myapplication.R;
 import com.example.myapplication.ServiceAdapter;
 import com.example.myapplication.database.MyDataBase;
+import com.example.myapplication.entity.Categorie;
 import com.example.myapplication.entity.Service;
 
 import java.util.List;
@@ -80,8 +81,8 @@ public class serviceFragment extends Fragment {
         if (getArguments() != null) {
 
          String nomcategorie = this.getArguments().getString("fromHolder");
-        int c = db.categorieDao().findidCategorieByName(nomcategorie);
-        List<Service> ll = db.serviceDao().getServiceByCategorie(c);
+      //  Categorie c = db.categorieDao().findidCategorieByID(nomcategorie);
+        List<Service> ll = db.serviceDao().getServiceByCategorie(nomcategorie);
         /*List<Service> listService=db.serviceDao().getAll();
             ServiceAdapter adapter =new ServiceAdapter(listService);*/
         ServiceAdapter adapter =new ServiceAdapter(ll);

@@ -14,7 +14,7 @@ public class Service {
     @ColumnInfo(name = "location")
     private String location ;
 
-    public int idC ;
+    public String idC ;
 
     public Service() {
     }

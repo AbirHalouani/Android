@@ -14,7 +14,7 @@ public class CategorieWithService {
    @Embedded
    public Categorie categorie;
     @Relation(
-            parentColumn = "idCategorie",
+            parentColumn = "nomCategorie",
             entityColumn = "idC"
     )
     public List<Service> serviceList;

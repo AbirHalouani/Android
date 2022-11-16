@@ -12,7 +12,7 @@ import com.example.myapplication.entity.Categorie;
 import com.example.myapplication.entity.Service;
 import com.example.myapplication.serviceActivity;
 
-@Database(entities = {Service.class,Categorie.class}, version = 2, exportSchema = false)
+@Database(entities = {Service.class,Categorie.class}, version = 3, exportSchema = false)
 public abstract class MyDataBase extends RoomDatabase {
     private static MyDataBase instance;
 

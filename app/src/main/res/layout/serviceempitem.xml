@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/cardview_default_radius"
+    android:layout_marginTop="@dimen/cardview_compat_inset_shadow"
+    android:background="@android:drawable/screen_background_light_transparent">
+
+
+    <ImageView
+        android:id="@+id/imageViewEmp"
+        android:layout_width="414dp"
+        android:layout_height="181dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/user"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="24dp"
+        android:drawableLeft="@drawable/ic_baseline_co_present_24"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewEmp" />
+
+    <TextView
+        android:id="@+id/lieu2"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="24dp"
+        android:drawableLeft="@drawable/ic_baseline_location_on_24"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/user"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewEmp" />
+
+    <TextView
+        android:id="@+id/prix2"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:drawableRight="@drawable/ic_baseline_attach_money_24"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/lieu2"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewEmp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="50dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="6dp"
+        android:text="Button"
+        app:icon="@drawable/ic_baseline_delete_forever_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/prix2"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewEmp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewEmp"
+        tools:layout_editor_absoluteX="220dp"
+        tools:visibility="invisible" /><![CDATA[
+
+    />
+]]>
+</androidx.constraintlayout.widget.ConstraintLayout>

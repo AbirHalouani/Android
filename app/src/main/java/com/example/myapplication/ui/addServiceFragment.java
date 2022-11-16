@@ -101,9 +101,9 @@ public class addServiceFragment extends Fragment {
 
             float p= Float.parseFloat(prix.getText().toString());
             String l = lieu.getText().toString();
-           int categorie = db.categorieDao().findidCategorieByName(autoCompleteTextView.getText().toString());
+           Categorie categorie = db.categorieDao().findidCategorieByID(autoCompleteTextView.getText().toString());
             Service s = new Service(p,l);
-            s.idC = categorie ;
+            s.idC = categorie.getNomCategorie() ;
             //db.serviceDao().insertOne(s);
             db.categorieDao().insertService(s);
 

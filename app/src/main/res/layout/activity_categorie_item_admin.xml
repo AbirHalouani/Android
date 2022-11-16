@@ -26,16 +26,6 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button4"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="64dp"
-        app:icon="@drawable/ic_baseline_launch_24"
-        app:layout_constraintStart_toEndOf="@+id/imageView7ad"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
         android:id="@+id/button5"
         android:layout_width="50dp"
         android:layout_height="50dp"
@@ -43,7 +33,7 @@
         android:layout_marginEnd="92dp"
         app:icon="@drawable/ic_baseline_delete_forever_24"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button4"
+        app:layout_constraintStart_toEndOf="@+id/imageView7ad"
         app:layout_constraintTop_toTopOf="@+id/textViewad" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

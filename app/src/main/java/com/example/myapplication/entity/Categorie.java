@@ -1,5 +1,6 @@
 package com.example.myapplication.entity;
 
+import androidx.annotation.NonNull;
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.ForeignKey;
@@ -10,16 +11,16 @@ import java.util.List;
 
 @Entity(tableName = "categorie_table")
 public class Categorie {
-    @PrimaryKey(autoGenerate = true)
-    private int idCategorie ;
-    @ColumnInfo(name = "nom")
+
+    @PrimaryKey(autoGenerate = false)
+    @NonNull
     private String nomCategorie ;
 
     @ColumnInfo(name = "image")
     private String image ;
 
     public Categorie(int idCategorie, String nomCategorie) {
-        this.idCategorie = idCategorie;
+
         this.nomCategorie = nomCategorie;
     }
 
@@ -33,13 +34,6 @@ public class Categorie {
     }
     public Categorie(){}
 
-    public int getIdCategorie() {
-        return idCategorie;
-    }
-
-    public void setIdCategorie(int idCategorie) {
-        this.idCategorie = idCategorie;
-    }
 
     public String getNomCategorie() {
         return nomCategorie;
