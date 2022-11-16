@@ -6,6 +6,16 @@
         android:icon="@drawable/ic_home_black_24dp"
         android:title="@string/title_home" />
 
+    <item
+        android:id="@+id/navigation_sign_in"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="register" />
+    <item
+        android:id="@+id/login"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Log in" />
+
+
    <!-- <item
         android:id="@+id/navigation_dashboard"
         android:icon="@drawable/ic_dashboard_black_24dp"

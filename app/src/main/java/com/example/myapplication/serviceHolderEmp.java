@@ -10,8 +10,6 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.myapplication.database.MyDataBase;
-import com.example.myapplication.ui.UpdateServiceFragment;
-import com.example.myapplication.ui.updateCategorieFragment;
 
 public class serviceHolderEmp extends RecyclerView.ViewHolder {
     TextView textView1;
@@ -34,7 +32,7 @@ public class serviceHolderEmp extends RecyclerView.ViewHolder {
 
 
 
-        itemView.setOnClickListener(new View.OnClickListener() {
+       /* itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Bundle bundle = new Bundle();
@@ -48,14 +46,13 @@ public class serviceHolderEmp extends RecyclerView.ViewHolder {
                 activity.getSupportFragmentManager().beginTransaction().replace(R.id.addservicelayout,fragment,"updateC").addToBackStack(null).commit();
 
             }
-        });}
+        });}*/
     // log.d("demo","onclick: item clicked");
           /*  Intent intent = new Intent(rootview.getContext(), serviceActivity.class);
             rootview.getContext().startActivity(intent); */
 
 
 
-}
+}}
 
 
-}

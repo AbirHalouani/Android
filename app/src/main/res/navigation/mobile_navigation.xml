@@ -11,6 +11,20 @@
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
 
+
+    <fragment
+        android:id="@+id/navigation_sign_in"
+        android:name="com.example.myapplication.ui.MainActivity"
+        android:label="sign in"
+        tools:layout="@layout/fragment_home" />
+
+
+    <fragment
+        android:id="@+id/login"
+        android:name="com.example.myapplication.ui.LoginActivity"
+        android:label="Log in"
+        tools:layout="@layout/activity_login" />
+
  <!--   <fragment
         android:id="@+id/navigation_dashboard"
         android:name="com.example.myapplication.ui.dashboard.DashboardFragment"

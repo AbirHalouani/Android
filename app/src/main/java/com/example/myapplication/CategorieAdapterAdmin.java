@@ -104,7 +104,7 @@ else{
             }
         });
 
-        holder.edit.setOnClickListener(new View.OnClickListener() {
+        /*holder.edit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
@@ -157,10 +157,10 @@ else
               //  dialog.dismiss();
 
 
-            }
+         /*   }
 
 
-        });
+        });*/
 
        // dialog.show();
 

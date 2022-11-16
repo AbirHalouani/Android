@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".ReclamationActivity">
+    <TextView
+        android:id="@+id/t"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Que souhaitez vous réclamer ?"
+        android:textSize="24dp"
+        android:layout_marginTop="20dp"/>
+    <EditText
+        android:id="@+id/n"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nom de l'employé"
+        android:textSize="24dp"
+        android:layout_below="@+id/t"
+        android:inputType="textPersonName"/>
+    <EditText
+        android:id="@+id/r"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Reclamation: Commentaires"
+        android:textSize="24dp"
+        android:layout_below="@+id/n"
+        android:inputType="textPersonName"/>
+
+    <Button
+        android:id="@+id/bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Réclamation"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/r"/>
+    <Button
+        android:id="@+id/btup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Modifier votre réclamation"
+        android:layout_below="@id/bt"/>
+    <Button
+        android:id="@+id/btnD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Supprimer votre réclamation"
+        android:layout_below="@id/btup"/>
+    <Button
+        android:id="@+id/btv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Afficher votre réclamation"
+        android:layout_below="@id/btnD"/>
+</RelativeLayout>
