@@ -16,7 +16,7 @@ import java.util.List;
 public class ServiceAdapter extends RecyclerView.Adapter<ServiceHolder> {
 
     List<Service> serviceList;
-    ServiceAdapter(List<Service> list){
+    public ServiceAdapter(List<Service> list){
         this.serviceList=list;
     }
     @NonNull

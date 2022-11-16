@@ -6,7 +6,7 @@
         android:icon="@drawable/ic_home_black_24dp"
         android:title="@string/title_home" />
 
-    <item
+   <!-- <item
         android:id="@+id/navigation_dashboard"
         android:icon="@drawable/ic_dashboard_black_24dp"
         android:title="@string/title_dashboard" />
@@ -16,10 +16,28 @@
         android:icon="@drawable/ic_notifications_black_24dp"
         android:title="@string/title_notifications" />
 
-
     <item
-        android:id="@+id/serviceActivity"
+        android:id="@+id/navigation_service"
+        android:icon="@drawable/diversity"
+        android:title="Services"/> -->
+    <item
+        android:id="@+id/navigation_listCategory"
+        android:icon="@drawable/diversity"
+        android:title="Services"/>
+
+
+
+
+
+    <!--<item
+        android:id="@+id/navigation_addService"
         android:icon="@drawable/ic_notifications_black_24dp"
-        android:title="Services" />
+        android:title="ajouter service "/>-->
+
+     <item
+        android:id="@+id/navigation_addCategorie"
+        android:icon="@drawable/add"
+        android:title="ajouter categorie "/>
+
 
 </menu>

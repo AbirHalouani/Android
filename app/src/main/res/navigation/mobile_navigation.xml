@@ -11,7 +11,7 @@
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
 
-    <fragment
+ <!--   <fragment
         android:id="@+id/navigation_dashboard"
         android:name="com.example.myapplication.ui.dashboard.DashboardFragment"
         android:label="@string/title_dashboard"
@@ -22,9 +22,31 @@
         android:name="com.example.myapplication.ui.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
-    <activity
-        android:id="@+id/serviceActivity"
-        android:name="com.example.myapplication.serviceActivity"
-        android:label="activity_service"
+
+    <fragment
+        android:id="@+id/navigation_service"
+        android:name="com.example.myapplication.ui.serviceFragment"
+        android:label="nos services"
         tools:layout="@layout/activity_service" />
-</navigation>
+    -->
+
+
+    <fragment
+        android:id="@+id/navigation_listCategory"
+        android:name="com.example.myapplication.ui.listCategory"
+        android:label="les Services"
+        tools:layout="@layout/activity_categorie_holder" />
+    <!--  <fragment
+          android:id="@+id/navigation_addService"
+          android:name="com.example.myapplication.ui.addServiceFragment"
+          android:label="ajouter services"
+          tools:layout="@layout/activity_add_service"  -->
+
+
+     <fragment
+           android:id="@+id/navigation_addCategorie"
+           android:name="com.example.myapplication.ui.addCategorieFragment"
+           android:label="ajouter categorie"
+           tools:layout="@layout/activity_addcategorie" />
+
+ </navigation>

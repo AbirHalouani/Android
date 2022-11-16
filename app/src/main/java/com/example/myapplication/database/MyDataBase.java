@@ -12,7 +12,7 @@ import com.example.myapplication.entity.Categorie;
 import com.example.myapplication.entity.Service;
 import com.example.myapplication.serviceActivity;
 
-@Database(entities = {Service.class,Categorie.class}, version = 1, exportSchema = false)
+@Database(entities = {Service.class,Categorie.class}, version = 2, exportSchema = false)
 public abstract class MyDataBase extends RoomDatabase {
     private static MyDataBase instance;
 
@@ -25,6 +25,8 @@ public abstract class MyDataBase extends RoomDatabase {
         if (instance == null) {
             instance = Room.databaseBuilder(ctx.getApplicationContext(), MyDataBase.class, "db")
                     .allowMainThreadQueries()
+                    .fallbackToDestructiveMigration()
+
                     .build();
         }
         return instance;

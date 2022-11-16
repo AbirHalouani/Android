@@ -15,6 +15,9 @@ public class Categorie {
     @ColumnInfo(name = "nom")
     private String nomCategorie ;
 
+    @ColumnInfo(name = "image")
+    private String image ;
+
     public Categorie(int idCategorie, String nomCategorie) {
         this.idCategorie = idCategorie;
         this.nomCategorie = nomCategorie;
@@ -22,6 +25,11 @@ public class Categorie {
 
     public Categorie(String nomCategorie) {
         this.nomCategorie = nomCategorie;
+    }
+
+    public Categorie(String nomCategorie,String image) {
+        this.nomCategorie = nomCategorie;
+        this.image = image;
     }
     public Categorie(){}
 
@@ -39,5 +47,13 @@ public class Categorie {
 
     public void setNomCategorie(String nomCategorie) {
         this.nomCategorie = nomCategorie;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
     }
 }

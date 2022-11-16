@@ -16,6 +16,8 @@ import java.util.List;
 public class CategorieActivity extends AppCompatActivity {
 
     RecyclerView recycleView;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,8 +28,9 @@ public class CategorieActivity extends AppCompatActivity {
         MyDataBase db = MyDataBase.getDataBase(CategorieActivity.this);
         List<Categorie> categorieList=db.categorieDao().getAll();
         CategorieAdapter adapter =new CategorieAdapter(categorieList);
-        //adapter.notifyDataSetChanged();
+        adapter.notifyDataSetChanged();
         recycleView.setAdapter(adapter);
         recycleView.setLayoutManager(new LinearLayoutManager(getApplicationContext(),LinearLayoutManager.VERTICAL,false));
+
     }
 }

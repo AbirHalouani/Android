@@ -17,5 +17,7 @@ public interface ServiceDao {
     void delete(Service service);
     @Query("SELECT * FROM service_table")
     List<Service> getAll();
+    @Query("SELECT * FROM service_table WHERE idC =:idC")
+    List<Service> getServiceByCategorie(int idC);
 }
 

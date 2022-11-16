@@ -32,6 +32,14 @@ public interface CategorieDao {
     void insertService(Service service);
 
 
+    @Query("SELECT idCategorie FROM categorie_table WHERE nom = :name")
+    int findidCategorieByName(String name);
+
+
+    @Query("SELECT * FROM categorie_table WHERE nom = :name")
+    List<Categorie> findCategorieByName (String name);
+
+
 
 
 
